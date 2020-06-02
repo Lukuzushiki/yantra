@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="frontend/styles/main.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Quicksand&display=swap" rel="stylesheet" />
+    <!-- XZOOM -->
+    <link rel="stylesheet" href="frontend/libraries/xzoom/dist/xzoom.css" />
+
+    <title>Yantra Cake and Bakery</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <div class="navbar navbar-expand-lg navbar-light bg-tosca">
+            <a class="navbar-brand" href="#">
+                <img src="frontend/images/logo.png" alt="Yantra Logo"">
+        </a>
+
+        <button
+          class=" navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown">
+                                PRODUCT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Cake</a>
+                                <a class="dropdown-item" href="#">Cookies</a>
+                                <a class="dropdown-item" href="#">Traditional</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                    </ul>
+
+                    <!-- Mobile Button -->
+                    <form class="form-inline d-sm-block d-md-none">
+                        <button class="btn btn-login my-2 my-sm-0 mr-3">Login</button>
+                        <button class="btn btn-login my-2 my-sm-0">Trolley</button>
+                    </form>
+                </div>
+        </div>
+        <header class="text-right my-2 my-lg-0 d-none d-md-block">
+            <div class="bg-header">
+                <!-- Desktop Button -->
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block mr-sm-2 ">
+                    <a href="#" class="btn-trolley btn-header-right my-sm-0 px-4">
+                        <img class="logo" src="frontend/images/trolley.png" />
+                        Your Trolley
+                    </a>
+                    <button class="btn btn-login btn-header-right my-sm-0 px-4">
+                        <img src="" alt="" />
+                        Login
+                    </button>
+                </form>
+            </div>
+        </header>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <header class="breadcrumbs-detail">
+        <div class="container">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Product</a></li>
+                    <li class="breadcrumb-item active">Detail</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Detail -->
+        <section class="section-detail-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-2">
+                        <div class="xzoom-container">
+                            <img class="xzoom" id="xzoom-default"
+                                src="frontend/images/skyla-design-57pQyh94xSo-unsplash.jpg" />
+                            <div class="xzoom-thumbs">
+                                <a href="frontend/images/skyla-design-57pQyh94xSo-unsplash.jpg"><img
+                                        class="xzoom-gallery" width="128"
+                                        src="frontend/images/skyla-design-57pQyh94xSo-unsplash.jpg"
+                                        xpreview="frontend/images/skyla-design-57pQyh94xSo-unsplash.jpg" /></a>
+                                <a href="frontend/images/michaela-baum-VnM6_liIRJ0-unsplash.jpg"><img
+                                        class="xzoom-gallery" width="128"
+                                        src="frontend/images/michaela-baum-VnM6_liIRJ0-unsplash.jpg"
+                                        xpreview="frontend/images/michaela-baum-VnM6_liIRJ0-unsplash.jpg" /></a>
+                                <a href="frontend/images/strawberry-cup-cake.png"><img class="xzoom-gallery" width="128"
+                                        src="frontend/images/strawberry-cup-cake.png"
+                                        xpreview="frontend/images/strawberry-cup-cake.png" /></a>
+                                <a href="frontend/images/background.png"><img class="xzoom-gallery" width="128"
+                                        src="frontend/images/background.png"
+                                        xpreview="frontend/images/background.png" /></a>
+                                <a href="frontend/images/michaela-baum-VnM6_liIRJ0-unsplash.jpg"><img
+                                        class="xzoom-gallery" width="128"
+                                        src="frontend/images/michaela-baum-VnM6_liIRJ0-unsplash.jpg"
+                                        xpreview="frontend/images/michaela-baum-VnM6_liIRJ0-unsplash.jpg" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="title">Cup Cakes</h2>
+                                <p class="price">Rp.4.000/Cup</p>
+                                <h2>Order Now</h2>
+                                <div class="input-group">
+                                    <input type="button" value="-" class="button-minus btn btn-minus"
+                                        data-field="quantity" />
+                                    <input type="text" step="1" max="" value="1" name="quantity" class="quantity" />
+                                    <input type="button" value="+" class="button-plus btn btn-plus"
+                                        data-field="quantity" />
+                                </div>
+                                <button class="btn btn-trolley" type="submit">
+                                    Put in trolley
+                                    <img src="frontend/images/trolley.png" alt="" />
+                                </button>
+                                <button class="btn btn-buy" type="submit">
+                                    Buy Now
+                                    <img src="frontend/images/Bag.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="card-footer">
+                                <h2>Note</h2>
+                                <p>Your order will be delivered in 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Section -->
+            <section class="section-popular">
+                <div class="bg-grey">
+                    <div class="container">
+                        <h2>Popular Cake</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="frontend/images/cake.png" alt="" />
+                                    <div class="card-body">
+                                        <h2>Red Velvet</h2>
+                                        <p>Rp.13.000/Slice</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="frontend/images/cake.png" alt="" />
+                                    <div class="card-body">
+                                        <h2>Red Velvet</h2>
+                                        <p>Rp.13.000/Slice</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="frontend/images/cake.png" alt="" />
+                                    <div class="card-body">
+                                        <h2>Red Velvet</h2>
+                                        <p>Rp.13.000/Slice</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="frontend/images/cake.png" alt="" />
+                                    <div class="card-body">
+                                        <h2>Red Velvet</h2>
+                                        <p>Rp.13.000/Slice</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="mt-md-5">Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="mt-md-5">Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Trolley</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="mt-md-5">Category</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Cake</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Traditional</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="mt-md-5">Get In Touch</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            Yantra Cake & Bakery 0822-0099-1122 yantra@yantra.com
+                            Pekanbaru,Riau Indonesia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-2 pb-2">
+                <div class="col-auto text-gray-500 font-weight-light">
+                    2019 Copyright Yantra • All rights reserved • Made in Pekanbaru
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="frontend/libraries/xzoom/dist/xzoom.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".xzoom, .xzoom-gallery").xzoom({
+                zoomWidth: 500,
+                title: false,
+                tint: "#333",
+                Xoffset: 15
+            });
+        });
+    </script>
+
+    <script>
+        function incrementValue(e) {
+            e.preventDefault();
+            var fieldName = $(e.target).data("field");
+            var parent = $(e.target).closest("div");
+            var currentVal = parseInt(
+                parent.find("input[name=" + fieldName + "]").val(),
+                10
+            );
+
+            if (!isNaN(currentVal)) {
+                parent.find("input[name=" + fieldName + "]").val(currentVal + 1);
+            } else {
+                parent.find("input[name=" + fieldName + "]").val(0);
+            }
+        }
+
+        function decrementValue(e) {
+            e.preventDefault();
+            var fieldName = $(e.target).data("field");
+            var parent = $(e.target).closest("div");
+            var currentVal = parseInt(
+                parent.find("input[name=" + fieldName + "]").val(),
+                10
+            );
+
+            if (!isNaN(currentVal) && currentVal > 0) {
+                parent.find("input[name=" + fieldName + "]").val(currentVal - 1);
+            } else {
+                parent.find("input[name=" + fieldName + "]").val(0);
+            }
+        }
+
+        $(".input-group").on("click", ".button-plus", function (e) {
+            incrementValue(e);
+        });
+
+        $(".input-group").on("click", ".button-minus", function (e) {
+            decrementValue(e);
+        });
+    </script>
+</body>
+
+</html>
